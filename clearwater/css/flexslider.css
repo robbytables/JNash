@@ -78,7 +78,7 @@ html[xmlns] .slides {display: block;}
 .flex-pauseplay a.flex-play:before { content: '\f003'; }
 
 /* Control Nav */
-.flex-control-nav {width: 100%; position: absolute; bottom: 44px; z-index: 500; text-align: center;}
+.flex-control-nav {width: 100%; position: absolute; bottom:0px; z-index: 500; text-align: center;}
 .flex-control-nav li {margin: 0 6px; display: inline-block; zoom: 1; *display: inline;}
 .flex-control-paging li a {width: 66px; height: 5px; display: block; background: #fff; background: rgba(255,255,255,0.5); cursor: pointer; text-indent: -9999px;  }
 .flex-control-paging li a:hover { background: #ccc; background: rgba(255,255,255,0.7); }

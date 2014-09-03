@@ -1,7 +1,26 @@
-$(document).ready(function () {
+$(document).ready(function() {
 
-    "use strict";
+  "use strict";
+  
+  
+    $(document).foundation();  
 
+    $('#modal_window').foundation('reveal', 'open');
+
+    $( '#modal_feedback' ).submit(function( event ) {
+      event.preventDefault();
+       var email = $('#email').val();
+       $('#modal_content').html('<br><h6> Thank you! </h6><br>');
+       $.ajax({
+        url: 'submit_email.php',
+        type: 'POST',
+        dataType: "json",
+        data: {
+            email: email,
+        }
+      });
+    });
+    
     // Smooth Scroll to internal links
 
     $('.scroll').smoothScroll({
@@ -67,7 +86,7 @@ $(document).ready(function () {
 
         if (iOS === false) {
             $('#home-slider .slides li').css('background-position-y', scaleBg);
-            $('#client-divider').css('background-position-y', scaleBg + $('#client-divider').offset().top - 120);
+           // $('#client-divider').css('background-position-y', scaleBg + $('#client-divider').offset().top - 120);
         }
 
         if ($(window).scrollTop() > 1) {
@@ -146,6 +165,6 @@ $(document).ready(function () {
 
    // });
 
-
+  
 
 });

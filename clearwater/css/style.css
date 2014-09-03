@@ -62,7 +62,7 @@ input{ -webkit-appearance: none; }
 /** BUTTONS **/
 
 .btn{
-	padding: 15px 25px 15px 25px;
+	padding: 5px 15px 5px 15px;
 	border: 7px double #222;
 	background-color: #222;
 	cursor: pointer;
@@ -71,19 +71,20 @@ input{ -webkit-appearance: none; }
 	text-align: center;
 	display: inline-block;
 	overflow: hidden;
+    color: #009AD6;
 }
 
 .twitter-bg{
-	background-color: #009ad6;
-	border-color: #009ad6;
+	background-color: #000000;
+	border-color: black;
 }
 
 .twitter-bg:hover h6{
-	color: #009ad6 !important;
+	color: #000000 !important;
 }
 
 .twitter-bg:hover .icon{
-	color: #009ad6 !important;
+	color: #000000 !important;
 }
 
 .btn h6{
@@ -105,8 +106,8 @@ input{ -webkit-appearance: none; }
 	background-color: #fff;
 }
 
-.btn:hover h6{ color: #222; }
-.btn:hover .icon{ color: #222; }
+.btn:hover h6{ color: #fff; }
+.btn:hover .icon{ color: #fff; }
 
 /********************* NAVIGATION ********************/
 
@@ -211,8 +212,8 @@ input{ -webkit-appearance: none; }
 
 #home-slider .slides li{
 	background-size: cover !important;
-	background-position: center;
-	background-position-y: -20px;
+	background-position: top;
+	background-position-y: -65px !important;
 	background-attachment: fixed !important;
 	
 }
@@ -586,4 +587,20 @@ input{ -webkit-appearance: none; }
 	text-transform: uppercase;
 	font-size: 12px;
 	opacity: 0.7;
+}
+
+#modal_window{
+  display: none;
+  z-index: 200;
+  position: fixed;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 360px;
+  padding: 10px 20px;
+  background: #fff;
+  border: 5px solid #999;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  text-align: center;
 }
